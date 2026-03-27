@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packaging | Printworks Nigeria Ltd</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #fff; }
+        .nav-link { 
+            position: relative; 
+            padding: 10px 0;
+            transition: color 0.3s;
+            color: #333;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+        .nav-link:hover { color: #06b6d4; }
+        .dropdown { position: relative; padding-bottom: 10px; margin-bottom: -10px; }
+        .dropdown-menu { 
+            display: none; 
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 100;
+        }
+        .dropdown:hover .dropdown-menu { display: block; opacity: 1; visibility: visible; }
+
+        /* Service Specific Styling */
+        .service-feature:hover { background-color: #ecfeff; transition: 0.4s; }
+    </style>
+</head>
+<body>
+
+     <nav class="bg-white border-b sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-24">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center">
+            <img src="images/completelogo.png" alt="Printworks Logo" class="h-16 w-auto">
+        </a>
+        
+        <!-- Desktop Menu (Hidden on Mobile) -->
+        <div class="hidden md:flex space-x-8 items-center tracking-wide">
+            <a href="index.html" class="nav-link">Home</a>
+            <div class="dropdown">
+                <button class="nav-link flex items-center">About Us <i class="fas fa-chevron-down ml-1 text-[10px]"></i></button>
+                <div class="dropdown-menu bg-white shadow-xl border mt-1 w-48 py-2">
+                    <a href="welcome.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500">Welcome</a>
+                    <a href="values.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500">Core Values</a>
+                    <a href="team.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500">Our Team</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="nav-link flex items-center">Services <i class="fas fa-chevron-down ml-1 text-[10px]"></i></button>
+                <div class="dropdown-menu bg-white shadow-xl border mt-1 w-64 py-2">
+                    <a href="off-set-printing.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500">Offset Printing</a>
+                    <a href="largeforrmat-printing.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500">Large Format Printing</a>
+                    <a href="directimage.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500">Direct Imaging (DI)</a>
+                    <a href="packaging.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500">Packaging</a>
+                    <a href="corporate.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500">Corporate Gifts</a>
+                </div>
+            </div>
+            <a href="gallery.html" class="nav-link">Gallery</a>
+            <a href="contact.html" class="bg-neutral-950 text-white px-6 py-2.5 rounded font-bold border border-cyan-400 hover:bg-cyan-500 transition-all text-sm">Contact Us</a>
+        </div>
+
+        <!-- Hamburger Button (Visible on Mobile) -->
+        <button id="mobile-menu-button" class="md:hidden text-blue-900 focus:outline-none p-2">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
+    </div>
+
+    <!-- Mobile Menu Container -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t absolute w-full left-0 shadow-2xl overflow-y-auto max-h-screen">
+        <div class="px-6 py-6 flex flex-col space-y-4">
+            <a href="index.html" class="text-black font-bold py-2 border-b border-gray-100">Home</a>
+            
+            <!-- Mobile About Dropdown -->
+            <div>
+                <button class="mobile-dropdown-btn w-full flex justify-between items-center text-black font-bold py-2 border-b border-gray-100">
+                    About Us <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+                </button>
+                <div class="hidden bg-gray-50 pl-4 py-2 flex flex-col space-y-2">
+                    <a href="welcome.html" class="py-2 text-gray-700">Welcome</a>
+                    <a href="values.html" class="py-2 text-gray-700">Core Values</a>
+                    <a href="team.html" class="py-2 text-gray-700">Our Team</a>
+                </div>
+            </div>
+
+            <!-- Mobile Services Dropdown -->
+            <div>
+                <button class="mobile-dropdown-btn w-full flex justify-between items-center text-black font-bold py-2 border-b border-gray-100">
+                    Services <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+                </button>
+                <div class="hidden bg-gray-50 pl-4 py-2 flex flex-col space-y-2">
+                    <a href="off-set-printing.html" class="py-2 text-gray-700">Offset Printing</a>
+                    <a href="largeforrmat-printing.html" class="py-2 text-gray-700">Large Format</a>
+                    <a href="directimage.html" class="py-2 text-gray-700">Direct Imaging</a>
+                    <a href="packaging.html" class="py-2 text-gray-700">Packaging</a>
+                    <a href="corporate.html" class="py-2 text-gray-700">Corporate Gifts</a>
+                </div>
+            </div>
+
+            <a href="gallery.html" class="text-black font-bold py-2 border-b border-gray-100">Gallery</a>
+            <a href="contact.html" class="bg-neutral-950 text-white text-center py-4 rounded font-bold border border-cyan-400">Contact Us</a>
+        </div>
+    </div>
+</nav>
+
+    <section class="relative w-full h-[150px] md:h-[250px] overflow-hidden">
+        <div class="absolute inset-0 bg-blue-900/60 z-10"></div>
+        <img src="images/image01.png" alt="Offset Printing Machine" class="absolute inset-0 w-full h-full object-cover">
+        <div class="relative z-20 flex flex-col items-center justify-center h-full text-center px-6">
+            <h1 class="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter">Packaging</h1>
+        </div>
+    </section>
+
+   <section class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="text-center max-w-4xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 uppercase tracking-tight">Speed Meets Sharpness</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    For fast turnarounds without sacricing quality, our direct imaging printing offers vibrant, high-resolution results — ideal for short runs, quick campaigns, and personalized prints
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <div class="group cursor-pointer bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-60 overflow-hidden">
+                        <img src="images/books.jpg" alt="corrogated boxes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-5 flex justify-between items-center bg-white group-hover:bg-cyan-50 transition-colors">
+                        <span class="font-bold text-gray-800 tracking-wide">Corrugated Boxes</span>
+                        <div class="text-gray-400 group-hover:text-cyan-600 group-hover:translate-x-1 transition-all">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group cursor-pointer bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-60 overflow-hidden">
+                        <img src="images/stationery.jpg" alt="cake boxes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-5 flex justify-between items-center bg-white group-hover:bg-blue-50 transition-colors">
+                        <span class="font-bold text-gray-800 tracking-wide">Cake Boxes</span>
+                        <div class="text-gray-400 group-hover:text-blue-900 group-hover:translate-x-1 transition-all">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="group cursor-pointer bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-60 overflow-hidden">
+                        <img src="images/stationery.jpg" alt="mono cartons" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-5 flex justify-between items-center bg-white group-hover:bg-blue-50 transition-colors">
+                        <span class="font-bold text-gray-800 tracking-wide">Mono Cartons</span>
+                        <div class="text-gray-400 group-hover:text-blue-900 group-hover:translate-x-1 transition-all">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group cursor-pointer bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-60 overflow-hidden">
+                        <img src="images/catalogues.jpg" alt="pizza boxes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-5 flex justify-between items-center bg-white group-hover:bg-cyan-50 transition-colors">
+                        <span class="font-bold text-gray-800  tracking-wide">Pizza Boxes</span>
+                        <div class="text-gray-400 group-hover:text-cyan-600 group-hover:translate-x-1 transition-all">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<footer class="bg-neutral-950 text-white pt-16 px-6">
+    <div class="max-w-7xl mx-auto">
+        <!-- TOP TIER: Branding & Links -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 pb-12 text-left">
+            <!-- Brand & Socials -->
+            <div class="space-y-6">
+                <img src="images/completelogo.png" alt="Printworks Logo" class="h-16 w-auto brightness-0 invert">
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-white text-neutral-950 flex items-center justify-center hover:bg-cyan-400 hover:text-white transition-all duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white text-neutral-950 flex items-center justify-center hover:bg-cyan-400 hover:text-white transition-all duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Company -->
+            <div>
+                <h4 class="text-2xl font-bold mb-6">Company</h4>
+                <ul class="space-y-4 text-[15px] font-semibold text-gray-300">
+                    <li><a href="welcome.html" class="hover:text-cyan-400 transition">About Us</a></li>
+                    <li><a href="values.html" class="hover:text-cyan-400 transition">Our History</a></li>
+                    <li><a href="gallery.html" class="hover:text-cyan-400 transition">Gallery</a></li>
+                    <li><a href="contact.html" class="hover:text-cyan-400 transition">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Products -->
+            <div>
+                <h4 class="text-2xl font-bold mb-6">Products & Services</h4>
+                <ul class="space-y-4 text-[15px] font-semibold text-gray-300">
+                    <li><a href="off-set-printing.html" class="hover:text-cyan-400 transition">Offset Printing</a></li>
+                    <li><a href="largeformat-printing.html" class="hover:text-cyan-400 transition">Large Format</a></li>
+                    <li><a href="directimage.html" class="hover:text-cyan-400 transition">Direct Imaging</a></li>
+                    <li><a href="packaging.html" class="hover:text-cyan-400 transition">Packaging</a></li>
+                    <li><a href="corporate.html" class="hover:text-cyan-400 transition">Corporate Gifts</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-2xl font-bold mb-6">Links</h4>
+                <ul class="space-y-4 text-[15px] font-semibold text-gray-300">
+                    <li><a href="gallery.html" class="hover:text-cyan-400 transition">Our Gallery</a></li>
+                    <li><a href="privacy.html" class="hover:text-cyan-400 transition">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="hover:text-cyan-400 transition">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- MIDDLE TIER: Horizontal Contact Info -->
+        <div class="border-t border-white/20 grid grid-cols-1 md:grid-cols-3">
+            <!-- Phone -->
+            <div class="flex items-center justify-start gap-5 py-8 md:justify-center md:border-r border-white/20 border-b md:border-b-0">
+                <div class="w-12 h-12 rounded-full bg-white text-neutral-950 flex items-center justify-center shrink-0">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <span class="font-bold text-lg">+234 803 4527252</span>
+            </div>
+            
+            <!-- Address -->
+            <div class="flex items-center justify-start gap-5 py-8 md:justify-center md:border-r border-white/20 border-b md:border-b-0">
+                <div class="w-12 h-12 rounded-full bg-white text-neutral-950 flex items-center justify-center shrink-0">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <span class="text-[15px] font-semibold text-left max-w-[250px]">73 Suleman Barau Road, Suleja, Nigeria</span>
+            </div>
+            
+            <!-- Email -->
+            <div class="flex items-center justify-start gap-5 py-8 md:justify-center">
+                <div class="w-12 h-12 rounded-full bg-white text-neutral-950 flex items-center justify-center shrink-0">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <span class="font-bold text-sm">printworksnigeria@hotmail.com</span>
+            </div>
+        </div>
+
+        <!-- BOTTOM TIER: Copyright -->
+        <div class="py-8 text-center text-gray-400 text-sm tracking-wide border-t border-white/10">
+            <p>&copy; 2026 Printworks Nigeria Limited. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+    <button id="backToTop" class="fixed bottom-8 right-8 z-[60] bg-neutral-950 text-white w-12 h-12 rounded-full shadow-2xl border border-cyan-400 flex items-center justify-center opacity-0 translate-y-10 pointer-events-none transition-all duration-500 hover:bg-cyan-500 hover:scale-110">
+    <i class="fas fa-arrow-up"></i>
+</button>
+ <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = menuBtn.querySelector('i');
+
+    // Toggle Main Hamburger Menu
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        // Switch between hamburger and close icon
+        menuIcon.classList.toggle('fa-bars');
+        menuIcon.classList.toggle('fa-times');
+    });
+
+    // Handle Mobile Dropdowns (Accordions)
+    const dropdownBtns = document.querySelectorAll('.mobile-dropdown-btn');
+    
+    dropdownBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector('i');
+            
+            // Toggle the visibility of the dropdown content
+            content.classList.toggle('hidden');
+            
+            // Rotate the arrow icon
+            icon.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+        });
+    });
+});
+    
+document.addEventListener('DOMContentLoaded', () => {
+    const backToTopBtn = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+        // Show button after scrolling down 300px
+        if (window.scrollY > 300) {
+            backToTopBtn.classList.remove('opacity-0', 'translate-y-10', 'pointer-events-none');
+            backToTopBtn.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+        } else {
+            backToTopBtn.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
+            backToTopBtn.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+        }
+    });
+
+    // Smooth scroll to top when clicked
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
+</script>
+ 
+</body>
+</html>
