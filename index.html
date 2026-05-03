@@ -156,24 +156,27 @@
       }
 
       /* Trusted Brands */
-      .brands-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 40px;
-        max-width: 1100px;
+      .brands-container {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        max-width: 1200px;
         margin: 40px auto 0;
+      }
+      .brand-row {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
         align-items: center;
       }
       .brand-item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         transition: transform 0.3s ease;
       }
       .brand-item img {
-        max-height: 60px;
-        max-width: 100%;
+        max-height: 130px;
+        max-width: 280px;
         object-fit: contain;
+        mix-blend-mode: multiply;
       }
       .brand-item:hover {
         transform: scale(1.1);
@@ -218,9 +221,12 @@
         .mission-quote {
           text-align: left;
         }
-        .brands-grid {
-          grid-template-columns: repeat(2, 1fr);
-          gap: 30px;
+        .brands-container {
+          gap: 40px;
+        }
+        .brand-row {
+          flex-wrap: wrap;
+        gap: 60px;
         }
         .hero h1 {
           font-size: 2.5rem;
@@ -511,34 +517,50 @@
       </div>
     </section>
 
-    <section class="py-20 bg-gray-50 text-center px-6">
+    <section class="py-20 text-center px-6">
       <h2
         class="text-3xl font-bold text-gray-900 uppercase tracking-widest mb-4"
       >
         Trusted Brands
       </h2>
-      <div class="brands-grid">
-        <div class="brand-item">
-          <img src="images/abuja office.png" alt="Abuja Office" />
+      <div class="brands-container">
+        <!-- Row 1: 4 Columns -->
+        <div class="brand-row">
+          <div class="brand-item">
+            <img src="images/transcopabuja.png" alt="Transcorp Hilton Abuja" />
+          </div>
+          <div class="brand-item">
+            <img src="images/legendairport.png" alt="Legend Airport Hotel" />
+          </div>
+          <div class="brand-item">
+            <img src="images/nysc.png" alt="NYSC" />
+          </div>
+          <div class="brand-item">
+            <img src="images/altitude.png" alt="Altitude" />
+          </div>
         </div>
-        <div class="brand-item">
-          <img src="images/construction.png" alt="Construction" />
+
+        <!-- Row 2: 3 Columns -->
+        <div class="brand-row">
+          <div class="brand-item">
+            <img src="images/rccglogo.png" alt="RCCG" />
+          </div>
+          <div class="brand-item">
+            <img src="images/judiciary.png" alt="The Judiciary" />
+          </div>
+          <div class="brand-item">
+            <img src="images/abujacontinetial.png" alt="Abuja Continental Hotel" />
+          </div>
         </div>
-        <div class="brand-item">
-          <img src="images/digital.png" alt="Digital" />
-        </div>
-        <div class="brand-item"><img src="images/MTN.png" alt="MTN" /></div>
-        <div class="brand-item">
-          <img src="images/Nestle.png" alt="Nestle" />
-        </div>
-        <div class="brand-item">
-          <img src="images/Unilever.png" alt="Unilever" />
-        </div>
-        <div class="brand-item">
-          <img src="images/Sterling.png" alt="Sterling" />
-        </div>
-        <div class="brand-item">
-          <img src="images/UBA logo.png" alt="UBA" />
+
+        <!-- Row 3: 2 Columns -->
+        <div class="brand-row">
+          <div class="brand-item">
+            <img src="images/transcophote.png" alt="Transcorp Hotels" />
+          </div>
+          <div class="brand-item">
+            <img src="images/goldicon.png" alt="Goldicon" />
+          </div>
         </div>
       </div>
     </section>
