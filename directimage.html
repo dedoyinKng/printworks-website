@@ -4,75 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/printwork-meta.png" type="image/png" />
-    <title>Direct Imaging (DI) Printing | Printworks Nigeria Ltd</title>
+    <title>Direct Imaging (DI) Printing| Printworks Nigeria Ltd</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
     <style>
-      body {
-        font-family: "Poppins", sans-serif;
-        background-color: #fff;
-      }
-      .nav-link {
-        position: relative;
-        padding: 10px 0;
-        transition: color 0.3s;
-        color: #333;
-        font-size: 0.95rem;
-        font-weight: 600;
-      }
-      .nav-link:hover {
-        color: #06b6d4;
-      }
-      .dropdown {
-        position: relative;
-        padding-bottom: 10px;
-        margin-bottom: -10px;
-      }
-      .dropdown-menu {
-        display: none;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        z-index: 100;
-      }
-      .dropdown:hover .dropdown-menu {
-        display: block;
-        opacity: 1;
-        visibility: visible;
-      }
-
-      /* Service Specific Styling */
-      .service-feature:hover {
-        background-color: #ecfeff;
-        transition: 0.4s;
-      }
+      body { font-family: "Poppins", sans-serif; background-color: #fff; }
+      .nav-link { position: relative; padding: 10px 0; transition: color 0.3s; color: #333; font-size: 0.95rem; font-weight: 600; }
+      .nav-link:hover { color: #06b6d4; }
+      .dropdown { position: relative; padding-bottom: 10px; margin-bottom: -10px; }
+      .dropdown-menu { display: none; opacity: 0; visibility: hidden; transition: all 0.3s ease; position: absolute; top: 100%; left: 0; z-index: 100; }
+      .dropdown:hover .dropdown-menu { display: block; opacity: 1; visibility: visible; }
+      .service-feature:hover { background-color: #ecfeff; transition: 0.4s; }
     </style>
   </head>
   <body>
     <nav class="bg-white border-b sticky top-0 z-50">
-      <div
-        class="max-w-7xl mx-auto px-6 flex justify-between items-center h-24"
-      >
-        <!-- Logo -->
+      <!-- Changed max-w-7xl to w-full to get logo closer to edges -->
+      <div class="w-full px-4 md:px-8 flex justify-between items-center h-24">
+        <!-- Logo - Height adjusted for readability -->
         <a href="index.html" class="flex items-center">
-          <img
-            src="images/completelogo.png"
-            alt="Printworks Logo"
-            class="h-16 w-auto"
-          />
+          <img src="images/completelogo.png" alt="Printworks Logo" class="h-18 md:h-18 w-auto object-contain" />
         </a>
 
-        <!-- Desktop Menu (Hidden on Mobile) -->
+        <!-- Desktop Menu -->
         <div class="hidden md:flex space-x-8 items-center tracking-wide">
           <a href="index.html" class="nav-link">Home</a>
           <div class="dropdown">
@@ -80,21 +35,9 @@
               About Us <i class="fas fa-chevron-down ml-1 text-[10px]"></i>
             </button>
             <div class="dropdown-menu bg-white shadow-xl border mt-1 w-48 py-2">
-              <a
-                href="welcome.html"
-                class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500"
-                >Welcome</a
-              >
-              <a
-                href="values.html"
-                class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500"
-                >Core Values</a
-              >
-              <a
-                href="team.html"
-                class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500"
-                >Our Team</a
-              >
+              <a href="welcome.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500">Welcome</a>
+              <a href="values.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500">Core Values</a>
+              <a href="team.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500">Our Team</a>
             </div>
           </div>
           <div class="dropdown">
@@ -102,71 +45,30 @@
               Services <i class="fas fa-chevron-down ml-1 text-[10px]"></i>
             </button>
             <div class="dropdown-menu bg-white shadow-xl border mt-1 w-64 py-2">
-              <a
-                href="off-set-printing.html"
-                class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500"
-                >Offset Printing</a
-              >
-              <a
-                href="largeformat-printing.html"
-                class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500"
-                >Large Format Printing</a
-              >
-              <a
-                href="directimage.html"
-                class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500"
-                >Direct Imaging (DI)</a
-              >
-              <a
-                href="packaging.html"
-                class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500"
-                >Packaging</a
-              >
-              <a
-                href="corporate.html"
-                class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500"
-                >Corporate Gifts</a
-              >
+              <a href="off-set-printing.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500">Commercial Offset Printing</a>
+              <a href="largeformat-printing.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500">Large Format Printing and Signage</a>
+              <a href="directimage.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500">Direct Imaging (DI)</a>
+              <a href="packaging.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500">Packaging</a>
+              <a href="corporate.html" class="block px-4 py-2 hover:bg-gray-50 hover:text-cyan-500">Corporate Gifts</a>
             </div>
           </div>
           <a href="gallery.html" class="nav-link">Gallery</a>
-          <a
-            href="contact.html"
-            class="bg-neutral-950 text-white px-6 py-2.5 rounded font-bold border border-cyan-400 hover:bg-cyan-500 transition-all text-sm"
-            >Contact Us</a
-          >
+          <a href="contact.html" class="bg-neutral-950 text-white px-6 py-2 rounded font-bold border border-cyan-400 hover:bg-cyan-500 transition-all text-sm">Contact Us</a>
         </div>
 
-        <!-- Hamburger Button (Visible on Mobile) -->
-        <button
-          id="mobile-menu-button"
-          class="md:hidden text-blue-900 focus:outline-none p-2"
-        >
+        <!-- Hamburger Button -->
+        <button id="mobile-menu-button" class="md:hidden text-blue-900 focus:outline-none p-2">
           <i class="fas fa-bars text-2xl"></i>
         </button>
       </div>
 
       <!-- Mobile Menu Container -->
-      <div
-        id="mobile-menu"
-        class="hidden md:hidden bg-white border-t absolute w-full left-0 shadow-2xl overflow-y-auto max-h-screen"
-      >
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t absolute w-full left-0 shadow-2xl overflow-y-auto max-h-screen">
         <div class="px-6 py-6 flex flex-col space-y-4">
-          <a
-            href="index.html"
-            class="text-black font-bold py-2 border-b border-gray-100"
-            >Home</a
-          >
-
-          <!-- Mobile About Dropdown -->
+          <a href="index.html" class="text-black font-bold py-2 border-b border-gray-100">Home</a>
           <div>
-            <button
-              class="mobile-dropdown-btn w-full flex justify-between items-center text-black font-bold py-2 border-b border-gray-100"
-            >
-              About Us
-              <i
-                class="fas fa-chevron-down text-xs transition-transform duration-300"
-              ></i>
+            <button class="mobile-dropdown-btn w-full flex justify-between items-center text-black font-bold py-2 border-b border-gray-100">
+              About Us <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
             </button>
             <div class="hidden bg-gray-50 pl-4 py-2 flex flex-col space-y-2">
               <a href="welcome.html" class="py-2 text-gray-700">Welcome</a>
@@ -174,83 +76,58 @@
               <a href="team.html" class="py-2 text-gray-700">Our Team</a>
             </div>
           </div>
-
-          <!-- Mobile Services Dropdown -->
           <div>
-            <button
-              class="mobile-dropdown-btn w-full flex justify-between items-center text-black font-bold py-2 border-b border-gray-100"
-            >
-              Services
-              <i
-                class="fas fa-chevron-down text-xs transition-transform duration-300"
-              ></i>
+            <button class="mobile-dropdown-btn w-full flex justify-between items-center text-black font-bold py-2 border-b border-gray-100">
+              Services <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
             </button>
             <div class="hidden bg-gray-50 pl-4 py-2 flex flex-col space-y-2">
-              <a href="off-set-printing.html" class="py-2 text-gray-700"
-                >Offset Printing</a
-              >
-              <a href="largeformat-printing.html" class="py-2 text-gray-700"
-                >Large Format</a
-              >
-              <a href="directimage.html" class="py-2 text-gray-700"
-                >Direct Imaging</a
-              >
+              <a href="off-set-printing.html" class="py-2 text-gray-700">Commercial Offset Printing</a>
+              <a href="largeformat-printing.html" class="py-2 text-gray-700">Large Format Printing and Signage</a>
+              <a href="directimage.html" class="py-2 text-gray-700">Direct Imaging</a>
               <a href="packaging.html" class="py-2 text-gray-700">Packaging</a>
-              <a href="corporate.html" class="py-2 text-gray-700"
-                >Corporate Gifts</a
-              >
+              <a href="corporate.html" class="py-2 text-gray-700">Corporate Gifts</a>
             </div>
           </div>
-
-          <a
-            href="gallery.html"
-            class="text-black font-bold py-2 border-b border-gray-100"
-            >Gallery</a
-          >
-          <a
-            href="contact.html"
-            class="bg-neutral-950 text-white text-center py-4 rounded font-bold border border-cyan-400"
-            >Contact Us</a
-          >
+          <a href="gallery.html" class="text-black font-bold py-2 border-b border-gray-100">Gallery</a>
+          <a href="contact.html" class="bg-neutral-950 text-white text-center py-4 rounded font-bold border border-cyan-400">Contact Us</a>
         </div>
       </div>
     </nav>
-
-    <section class="relative w-full h-[150px] md:h-[250px] overflow-hidden">
-      <div class="absolute inset-0 bg-black/50 z-10"></div>
+    
+    <section class="relative w-full h-[150px] md:h-[300px] overflow-hidden">
       <img
         src="images/DIGITAL PRINTING HBI.jpeg"
         alt="digital printing"
         class="absolute inset-0 w-full h-full object-cover z-0"
-      />
-      <div
-        class="relative z-20 flex items-center justify-center h-full text-center px-6"
-      >
-        <h1
-          class="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter drop-shadow-lg"
-        >
-          Direct Imaging (DI) Printing
-        </h1>
-      </div>
-    </section>
+      /> </section>
 
     <section class="py-20 px-6 bg-white">
-      <div class="max-w-7xl mx-auto">
+    <div class="max-w-10xl mx-auto">
         <div class="text-center max-w-4xl mx-auto mb-16">
-          <h2
-            class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 uppercase tracking-tight"
+          <h1
+            class="text-5xl md:text-6xl font-bold text-Black-900 mb-6 uppercase tracking-tight"
+          >
+            Direct Imaging (DI) Printing
+          </h1>
+          <h3
+            class="text-1xl md:text-2xl font-bold text-gray-900 mb-6 uppercase tracking-tight"
           >
             Fast, Flexible, and High-Quality Printing Solutions
-          </h2>
+          </h3>
           <p class="text-gray-600 leading-relaxed">
-      
-          Our print-on-demand infrastructure is designed to provide you with flexible, cost-effective, and high-quality printing solutions. 
-          <br>
-Most ideal for fast turnaround times, so you can produce exactly what you need, when you need it—without the need for large upfront costs or inventory. 
-From customized products like books, brochures, and posters, to personalized merchandise such as Books, Notebooks, Photo Books, Customised Table Calendars, Tent cards, Menus and Stickers.
-<br>
-We handle both small and large orders with ease, quality control checks, seamless and cost-effective solutions.
-</p>
+            Our print-on-demand infrastructure is designed to provide you with
+            flexible, cost-effective, and high-quality printing solutions.
+            <br />
+            Most ideal for fast turnaround times, so you can produce exactly
+            what you need, when you need it—without the need for large upfront
+            costs or inventory. From customized products like books, brochures,
+            and posters, to personalized merchandise such as Books, Notebooks,
+            Photo Books, Customised Table Calendars, Tent cards, Menus and
+            Stickers.
+            <br />
+            We handle both small and large orders with ease, quality control
+            checks, seamless and cost-effective solutions.
+          </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

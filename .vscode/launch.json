@@ -5,10 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch Integrated Browser",
+            "request": "attach",
+            "type": "editor-browser",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
             "type": "chrome",
             "request": "launch",
-            "name": "Open packaging.html",
-            "file": "c:\\Users\\Leahpar\\Downloads\\Projects\\printworks-website\\packaging.html"
+            "name": "Open index.html",
+            "file": "c:\\Users\\Leahpar\\Downloads\\Projects\\printworks-website\\index.html"
         }
     ]
 }
